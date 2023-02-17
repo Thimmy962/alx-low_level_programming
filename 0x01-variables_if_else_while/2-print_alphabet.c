@@ -3,6 +3,7 @@
 /*
 * return o always
 * all work should be in main
+* main: prints all the alphabets in lower case
 */
 
 int main(void)
