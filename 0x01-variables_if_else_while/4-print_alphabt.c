@@ -1,8 +1,11 @@
 #include <stdio.h>
-/*
-* return o always
-* all work should be in main
-*/
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+
 int main(void)
 { int i;
 	for (i = 97; i <= 122; i++)
