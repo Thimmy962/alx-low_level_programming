@@ -1,5 +1,11 @@
 #include <stdio.h>
 
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
+
 int main(void)
 {
 	char i, c;
@@ -8,7 +14,7 @@ int main(void)
 	{
 		putchar(i);
 	}
-	for ( c = 'a'; c  <= 'f'; c++)
+	for (c = 'a'; c  <= 'f'; c++)
 	{
 		putchar(c);
 	}
