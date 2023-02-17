@@ -1,20 +1,21 @@
 #include <stdio.h>
 
-/*
-* return o always
-* all work should be in main
-*/
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
-{
-	for(int i = 97; i <= 122; i++)
+{ int i, j;
+	for (i = 97; i <= 122; i++)
 	{
 		putchar(i);
 	}
-	for (int i = 65; i <= 90; i++)
+	for (j = 65; j <= 90; j++)
 	{
-		putchar(i);
+		putchar(j);
 	}
 	putchar('\n');
-    return (0);
+return (0);
 }
