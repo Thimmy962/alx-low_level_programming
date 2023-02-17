@@ -1,10 +1,10 @@
 #include <stdio.h>
 
-/*
-* return o always
-* all work should be in main
-* main: prints all the alphabets in lower case
-*/
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 {   int i;
