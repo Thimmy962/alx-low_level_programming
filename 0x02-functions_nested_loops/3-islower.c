@@ -8,10 +8,16 @@
  * Return: 1 if is lowercase or 0 if is uppercase
  */
 
-int _islower(char c)
+int _islower(char j)
 {
-int c
-for (c = 'a'; c <= 'z'; c++)
-{
+    int c;
+    for (c = 'a'; c <= 'z'; c++)
+    {
+        if (c == j)
+            return (1);
+        else
+            return (0);
+    }
+}
 
 
