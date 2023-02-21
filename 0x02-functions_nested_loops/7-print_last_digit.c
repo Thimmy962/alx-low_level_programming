@@ -8,11 +8,9 @@
 
 
 
-int _abs(int n)
+int print_last_digit(int n)
 {
-if (n >= 0)
-{
-return (n);
-}
-return (n * -1);
+int b;
+b = n % 10;
+return (b);
 }
