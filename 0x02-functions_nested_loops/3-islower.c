@@ -11,13 +11,6 @@
 
 int _islower(char j)
 {
-/*int c;
-for (c = 'a'; c <= 'z'; c++)
-{
-if (c == j)
-return (1);
-}
-return (0);*/
 if (islower(j))
 {
 return (1);
