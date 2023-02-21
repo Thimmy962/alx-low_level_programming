@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * main - check the code.
@@ -9,9 +10,6 @@
 
 int main(void)
 {
-	int a;
-	for (a = 'a'; a <= 'z'; a++)
-		printf("%c", a);
-	printf("\n");
+    print_aplhabet();
 return (0);
 }
