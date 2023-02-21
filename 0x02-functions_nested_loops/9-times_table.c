@@ -31,7 +31,7 @@ void times_table(void)
 		    }
                 }
             else
-	    {
+	    {		k = i*j;
 		    if (k <=9)
 		    {
                     _putchar(k + '0');
