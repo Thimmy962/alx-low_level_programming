@@ -2,8 +2,6 @@
 
 /**
  * times_table - Check the code
- * @a: An integer input
- * @b: An integer input
  * Description: This function prints the last digit of a number
  * Return: the sum of a and b
 */
