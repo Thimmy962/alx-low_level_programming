@@ -10,8 +10,8 @@
 
 
 
-int _abs(int)
+int _abs(int n)
 {
-    abs(int);
+    abs(n);
     return (0);
 }
