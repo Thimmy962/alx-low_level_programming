@@ -2,11 +2,10 @@
 #include "main.h"
 
 /**
- * _islower - Check Holberton
+ * _isalpha - Check the code
  * @j: An input character
  * Description: function uses _putchar function to print
- * alphabet in lowercase 10 times
- * Return: 1 if is lowercase or 0 if is uppercase
+ * Return: 1 if j is an alphabet or 0 if j is not an alphabet
  */
 
 int _isalpha(char j)
