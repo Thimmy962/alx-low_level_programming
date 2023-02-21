@@ -5,8 +5,7 @@
  * _islower - Check Holberton
  * @j: An input character
  * Description: function uses _putchar function to print
- * alphabet in lowercase 10 times
- * Return: 1 if is lowercase or 0 if is uppercase
+ * Return: 1 if j is lowercase or 0 if j is not lowercase
  */
 
 int _islower(char j)
