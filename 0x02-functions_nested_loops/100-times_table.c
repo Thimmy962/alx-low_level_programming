@@ -2,10 +2,15 @@
 #include <stdio.h>
 
 /**
-* print_times_table - Check the code
-* @n: input an integer
-* Description: This function prints the last digit of a aber
-* Return: the sum of a and b
+ * print_times_table - prints the times table of n number
+ *
+ * Example Table
+ * 0, 0, 0, 0, ..
+ * 0, 1, 2, 3, ..
+ *
+ * @n: The number to print its times table
+ *
+ * Return: Returns nothing (void)
 */
 
 void print_times_table(int n)
