@@ -44,7 +44,7 @@ else if (n < 98)
 	}
 }
 else
-{
+{	b = n;
 		if (b == 98)
 		{
 			printf("%i\n", b);
