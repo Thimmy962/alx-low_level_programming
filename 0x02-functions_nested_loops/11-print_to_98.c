@@ -15,6 +15,8 @@
 void print_to_98(int n)
 {
 int b;
+b = n;
+	
 if (b == 98)
 {
 printf("%i",b);
