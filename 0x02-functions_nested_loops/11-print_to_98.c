@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 
-/*
+/**
  * print_to_98 - check code.
  *
  * @n: takes an inetger as input.
