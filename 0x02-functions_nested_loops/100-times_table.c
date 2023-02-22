@@ -4,56 +4,50 @@
 /**
 * print_times_table - Check the code
 * @f: input an integer
-* Description: This function prints the last digit of a number
+* Description: This function prints the last digit of a aber
 * Return: the sum of a and b
 */
 
-void print_times_table(int f)
+void print_times_table(int n)
 {
-	if (f > -1 && f < 16)
-    {
-        int i, j, k;
-	for (i = 0; i <= f; i++)
-	{
-		for (j = 0; j <= f; j++)
-		{
-			k = i * j;
-			if(k < 10)
-			{
-				_putchar(' ');
-				_putchar(' ');
-				_putchar(k + '0');
-				if(j != f)
-				{
-					_putchar(',');
-					_putchar(' ');
+	int a, b, c;
 
-					}
-			}
-			else if(k > 9 && k < 100)
+	if (n > -1 && n < 16)
+	{
+		for (a = 0; a <= n; a++)
+		{
+			// _putchar(48);
+			for (b = 1; b <= n; b++)
 			{
+				_putchar(',');
 				_putchar(' ');
-				_putchar((k / 10) + '0');
-				_putchar((k % 10) + '0');
-				if(j != f)
+
+				c = a * b;
+
+				/*
+				 * put space if cuct is single aber
+				 * place the first digit if two abers
+				 */
+				if (c <= 9)
 				{
-					_putchar(',');
 					_putchar(' ');
 				}
-			}
-			else
-			{
-				_putchar((k / 100) + '0');
-				_putchar((k % 100 / 10) + '0');
-				_putchar((k % 10) + '0');
-				if(j != f)
+				if (c <= 99)
 				{
-					_putchar(',');
 					_putchar(' ');
 				}
+				if (c >= 100)
+				{
+					_putchar((c / 100) + 48);
+					_putchar((c / 10) % 10 + '0');
+				}
+				else if (c <= 99 && c >= 10)
+				{
+					_putchar((c / 10) + '0');
+				}
+				_putchar((c % 10) + '0'); 
 			}
+			_putchar('\n');
 		}
-		_putchar('\n');
 	}
-}
 }
