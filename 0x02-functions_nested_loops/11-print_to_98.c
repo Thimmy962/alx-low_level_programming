@@ -2,13 +2,13 @@
 #include <stdio.h>
 
 /*
- * print_to_98 - check code
+ * print_to_98 - check code.
  *
- * @n: takes an inetger as input
+ * @n: takes an inetger as input.
  *
- * description: prints from n to 98
+ * description: prints from n to 98.
  *
- * return: void
+ * return: void.
  *
  */
 
