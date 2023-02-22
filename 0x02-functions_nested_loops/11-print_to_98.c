@@ -18,40 +18,42 @@ int b;
 
 if (n > 98)
 {
-	for (b = n; b >= 98; b--)
-	{	if (b == 98)
-		{
-			printf("%i\n", b);
-		}
-	 	else
-		{
-			printf("%i, ", b);
-		}
-	}
+for (b = n; b >= 98; b--)
+{	
+if (b == 98)
+{
+printf("%i\n", b);
+}
+else
+{
+printf("%i, ", b);
+}
+}
 }
 else if (n < 98)
 {
-	for (b = n; b <= 98; b++)
-	{
-		if (b == 98)
-		{
-			printf("%i\n", b);
-		}
-	 	else
-		{
-			printf("%i, ", b);
-		}
-	}
+for (b = n; b <= 98; b++)
+{
+if (b == 98)
+{
+printf("%i\n", b);
 }
 else
-{	b = n;
-		if (b == 98)
-		{
-			printf("%i\n", b);
-		}
-	 	else
-		{
-			printf("%i, ", b);
-		}
+{
+printf("%i, ", b);
+}
+}
+}
+else
+{	
+	b = n;
+if (b == 98)
+{
+printf("%i\n", b);
+}
+else
+{
+printf("%i, ", b);
+}
 }
 }
