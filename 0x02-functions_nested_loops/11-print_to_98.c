@@ -18,6 +18,7 @@ int b;
 if (b == 98)
 {
 printf("%i",b);
+}
 	
 else
 {
