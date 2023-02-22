@@ -24,5 +24,3 @@ for (b = n; b < 98; ++b)
 printf("%d, ", b);
 printf("98\n");
 }
-	
-
