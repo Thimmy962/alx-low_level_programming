@@ -2,43 +2,43 @@
 
 /**
  * times_table - Check the code
-*@f: integer input
+ * @f: an inetger input
  * Description: This function prints the last digit of a number
  * Return: the sum of a and b
 */
 
 void times_table(int f)
 {
-    int i, j, k;
-if (f >= 0 || f < 16)
-{
-for (i = 0; i <= 9; i++)
-{
-for (j = 0; j <= f; j++)
-{
-k = i * j;
+	int i, j, k;­
 
-if ((k / 10) == 0)
-{
-if (j != 0)
-_putchar(' ');
-_putchar(k + '0');
+if (f >=0 || f < 16)
+	for (i = 0; i <= 9; i++)
+	{
+	for (j = 0; j <= f; j++)
+	{
+	k = i * j;
 
-if (j == 9)
-continue;
-_putchar(',');
-_putchar(' ');
-}
-else
-{
-_putchar((k / 10) + '0');
-_putchar((k % 10) + '0');
-if (j == 9)
-continue;
-_putchar(',');
-_putchar(' ');
-}
-}
-_putchar('\n');
-}
+	if ((k / 10) == 0)
+	{
+	if (j != 0)
+	_putchar(' ');
+	_putchar(k + '0');
+
+	if (j == 9)
+	continue;
+	_putchar(',');
+	_putchar(' ');
+	}
+	else
+	{
+	_putchar((k / 10) + '0');
+	_putchar((k % 10) + '0');
+	if (j == 9)
+	continue;
+	_putchar(',');
+	_putchar(' ');
+	}
+	}
+	_putchar('\n');
+	}
 }
