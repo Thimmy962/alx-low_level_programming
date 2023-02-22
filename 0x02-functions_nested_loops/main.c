@@ -1,6 +1,10 @@
 #include "main.h"
+#include <stdio.h>
 
 int main(void)
 {
-	print_alphabet_x10();
+	int n;
+	printf("X: ");
+	scanf("%i", &n);
+	print_times_table(n);
 }
