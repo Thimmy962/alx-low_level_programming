@@ -14,19 +14,15 @@
 
 void print_to_98(int n)
 {
-int b; 
+	int b;
 
-if (n > 98)
-{
-for (b = n; b > 98; b--)
-	printf("%i, ", b);
-}
-else if (n < 98)
-{
-for (b = n; b < 98; b++)
-	printf("%i, ", b);
-printf("98\n");
-}
+	if (n > 98)
+		for (count = n; count > 98; --b)
+			printf("%d, ", b);
+	else
+		for (count = n; count < 98; ++b)
+			printf("%d, ", b);
+	printf("98\n");
 }
 	
 
