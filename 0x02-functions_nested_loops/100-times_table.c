@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * times_table - Check the code
+ *print_times_table - Check the code
  * @f: an inetger input
  * Description: This function prints the last digit of a number
  * Return: the sum of a and b
 */
 
-void times_table(int f)
+void print_times_table(int f)
 {
 	int i, j, k;­
 
