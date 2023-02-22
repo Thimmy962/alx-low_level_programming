@@ -9,9 +9,9 @@
 
 void times_table(int f)
 {
+    int i, j, k;
 if (f >= 0 || f < 16)
 {
-int i, j, k;
 for (i = 0; i <= 9; i++)
 {
 for (j = 0; j <= f; j++)
