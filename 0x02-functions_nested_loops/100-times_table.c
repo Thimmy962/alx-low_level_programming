@@ -22,10 +22,12 @@ void print_times_table(int f)
 			{
 				putchar(k + '0');
 				if(j != f)
+				{
 					_putchar(',');
 					_putchar(' ');
 					_putchar(' ');
 					_putchar(' ');
+					}
 			}
 			else if(k > 9 && k < 100)
 			{
