@@ -1,57 +1,45 @@
 #include "main.h"
 
 /**
- *print_times_table - Check the code
- * @f: an inetger input
+ * print_times_table - Check the code
+ * @f: input an integer
  * Description: This function prints the last digit of a number
  * Return: the sum of a and b
 */
 
 void print_times_table(int f)
 {
-	int i, j;
-
-	if (n > 0 && n < 15)
-	{
-		for (i = 0; i <= n; i++)
-		{
-			_putchar('0');
-			for (j = 1; j <= n; j++)
-				putformat(i * j);
-			_putchar('\n');
-		}
-	}
-}
-
-/**
- * putformat - formatted characters to output
- * @n: number to format
- * Return: nothing
- */
-void putformat(int n)
+if (f >= 0 || f <= 15)
 {
-	if (n <= 9)
-	{
-		_putchar(',');
-		_putchar(' ');
-		_putchar(' ');
-		_putchar(' ');
-		_putchar(n + '0');
-	}
-	else if (n > 9 && n <= 99)
-	{
-		_putchar(',');
-		_putchar(' ');
-		_putchar(' ');
-		_putchar(n / 10 + '0');
-		_putchar(n % 10 + '0');
-	}
-	else
-	{
-		_putchar(',');
-		_putchar(' ');
-		_putchar(n / 100 + '0');
-		_putchar(n / 10 % 10 + '0');
-		_putchar(n % 10 + '0');
-	}
+int i, j, k;
+for (i = 0; i <= 9; i++)
+{
+for (j = 0; j <= f; j++)
+{
+k = i * j;
+
+if ((k / 10) == 0)
+{
+if (j != 0)
+_putchar(' ');
+_putchar(k + '0');
+
+if (j == 9)
+continue;
+_putchar(',');
+_putchar(' ');
+}
+else
+{
+_putchar((k / 10) + '0');
+_putchar((k % 10) + '0');
+if (j == 9)
+continue;
+_putchar(',');
+_putchar(' ');
+}
+}
+_putchar('\n');
+}
+}
 }
