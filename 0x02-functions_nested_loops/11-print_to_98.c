@@ -41,6 +41,7 @@ else if (n < 98)
 		{
 			printf("%i, ", b);
 		}
+	}
 }
 else
 {
