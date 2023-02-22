@@ -3,7 +3,7 @@
 
 /**
 * print_times_table - Check the code
-* @f: input an integer
+* @n: input an integer
 * Description: This function prints the last digit of a aber
 * Return: the sum of a and b
 */
