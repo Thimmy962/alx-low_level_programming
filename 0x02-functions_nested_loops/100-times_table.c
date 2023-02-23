@@ -55,3 +55,4 @@ void print_times_table(int f)
 		_putchar('\n');
 	}
 }
+}
