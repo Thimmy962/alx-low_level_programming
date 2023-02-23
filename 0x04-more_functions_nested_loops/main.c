@@ -4,5 +4,5 @@
 
 int main(void)
 {
-	more_numbers();
+	print_square(0);
 }
