@@ -4,5 +4,5 @@
 
 int main(void)
 {
-	print_line(10);
+	more_numbers();
 }
