@@ -2,7 +2,7 @@
 #include <stdio.h>
 int main(void)
 {
-  int  b = _isupper('A');
+  int  b = _isdigit('1');
   if (b == 1)
     printf("1\n");
   else
