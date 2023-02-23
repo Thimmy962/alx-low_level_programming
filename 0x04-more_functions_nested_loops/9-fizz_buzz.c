@@ -3,7 +3,9 @@
 
 int main(void)
 {
-	for (int i = 1; i <101; i++)
+	int i = 1;
+
+	for (; i <101; i++)
 	{	
 		 if((i % 5) == 0 && (i % 3) == 0)
 		{
@@ -23,4 +25,5 @@ int main(void)
 		}
 	}
 	printf("\n");
+	return (0);
 }
