@@ -3,7 +3,7 @@
 int main(void)
 {
     int i, number;
-    for (i <= 0; i < 1024; i++)
+    for (i = 0; i < 1024; i++)
     {
         if ((i%3)==0 || (i%5)==0)
         {
@@ -11,4 +11,5 @@ int main(void)
         }
     }
     printf("%i\n", number);
+return (0);
 }
