@@ -3,7 +3,7 @@
 /**
  * print_numbers- check the code
  * description: pronts 1-9.
- * Return: Always void.
+ * Return: Nothing.
  */
 void print_numbers(void)
 {

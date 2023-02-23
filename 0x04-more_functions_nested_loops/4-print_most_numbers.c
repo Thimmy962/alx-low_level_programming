@@ -3,7 +3,7 @@
 /**
  * print_most_numbers - check the code
  * description: pronts 1-9 except for 2 and 4
- * Return: void.
+ * Return: Nothing.
  */
 
 void print_most_numbers(void)
