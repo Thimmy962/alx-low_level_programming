@@ -14,7 +14,7 @@ if (n > 0)
 int j;
 j = 0;
 
-for (; j <= n; j++)
+for (; j < n; j++)
 {
 _putchar('_');
 }
