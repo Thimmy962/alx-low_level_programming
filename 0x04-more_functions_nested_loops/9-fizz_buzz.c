@@ -3,8 +3,8 @@
 
 /**
  * main - check description
- * descriotion: prints a nice gen tish
- * return: aleays 0
+ * description: prints a nice gen tish
+ * Return: Always 0.
  */
 
 int main(void)
