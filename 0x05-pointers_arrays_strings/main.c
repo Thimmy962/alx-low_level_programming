@@ -5,8 +5,6 @@
 int main(void)
 {
 	string b = get_string("x: ");
-	// int n = _strlen(b);
-	// printf("n = %i\n", n);
-	puts2(b);
+	puts_half(b);
 	return (0);
 }
