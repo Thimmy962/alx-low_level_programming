@@ -19,7 +19,7 @@ int _atoi(char *s)
 		{
 			if (s[i - 1] == '-')
 			{
-				total = (total * 10 + s[i] - '0') * 1;
+				total = total * 10 + s[i] - '0' * -1;
 			}
 			else
 			{
