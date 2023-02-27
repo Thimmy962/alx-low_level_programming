@@ -23,7 +23,7 @@ int _atoi(char *s)
 		if (s[i] == '-')
 			sign--;
 	}
-	if (sign < 0)
+	if (sign != 0)
 		return (-total);
 	return (total);
 }
