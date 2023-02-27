@@ -3,7 +3,7 @@
 
 /**
  * puts2 - check the description
- * @str: takes an input string
+ * @s: takes an input string
  * description: prints every oter caracter is in a string
  * Return: Void
 */
