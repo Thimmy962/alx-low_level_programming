@@ -7,6 +7,7 @@ int main(void)
 	string b = get_string("x: ");
 	// int n = _strlen(b);
 	// printf("n = %i\n", n);
-	print_rev(b);
+	rev_string(b);
+	printf("%s\n", b);
 	return (0);
 }
