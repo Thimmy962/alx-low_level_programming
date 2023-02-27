@@ -19,7 +19,7 @@ int _atoi(char *s)
 		if (s[i] >= '0' && s[i] <= '9')
 		{
 			total = total * 10 + s[i] - '0';
-			if (isdigit(s[i + 1] == false)
+			if (isdigit(s[i + 1]) == false)
 					break;
 		}
 		if (s[i] == '-')
