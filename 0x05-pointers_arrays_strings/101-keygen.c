@@ -19,7 +19,7 @@ int main(void)
 	 * length of uppercase
 	 * length os special characters
 	 */
-	int length, digitsLength, upperCaseLength, lowerCaseLength, symbolsLength;
+	int length, digitsLength, upperCaseLength, lowerCaseLength, symbolsLength, i, char_type;
 
 	char *password, *digits, *lowerCase, *upperCase, *symbols;
 
@@ -47,8 +47,6 @@ int main(void)
 	symbolsLength = strlen(symbols);
 
 	srand(time(NULL) * getpid());
-
-	int i;
 
 	for (i = 0; i < length; i++)
 	{
