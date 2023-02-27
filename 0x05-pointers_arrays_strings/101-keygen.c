@@ -50,9 +50,10 @@ int main(void)
 
 	for (i = 0; i < length; i++)
 	{
-		int char_type;
-
-		/*char_type*/
+		/**
+		 *  char_type. get the char type by large random number % 4 since the total char type is 4. 
+		* The modulus will be between 0 - 4
+		*/
 		char_type = rand() % 4;
 
 		switch(char_type)
