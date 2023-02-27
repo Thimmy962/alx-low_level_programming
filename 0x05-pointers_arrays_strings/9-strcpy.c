@@ -16,8 +16,7 @@ char *_strcpy(char *dest, char *src)
 	int i = 0, a = strlen(src) + 1;
 
 	dest = malloc(a);
-	for (; i <= a; i++)
-		dest[i] = src[i];
+	strcpy(dest, *src);
 	return (dest);
 	free(dest);
 }
