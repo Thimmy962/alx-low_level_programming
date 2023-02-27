@@ -17,9 +17,13 @@ int _atoi(char *s)
 	for (; i < len; i++)
 		if (s[i] >= '0' && s[i] <= '9')
 			if (s[i] - 1 == '-')
-				total = -1 * (total * 10 + s[i] - '0');
+			{
+				total = (total * 10 + s[i] - '0') * 1;
+			}
 			else
+			{
 				total = total * 10 + s[i] - '0';
+			}
 	return total;
 }
 
