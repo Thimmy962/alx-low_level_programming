@@ -20,10 +20,12 @@ int _atoi(char *s)
 		{
 			total = total * 10 + s[i] - '0';
 			if (!isdigit(s[i + 1]))
-					break;
+				break;
 		}
 		if (s[i] == '-')
 			sign--;
+		else if (s[i] == '+')
+			sign++;
 	}
 	if (sign != 0)
 		return (-total);
