@@ -1,6 +1,7 @@
 #include "main.h"
 #include <string.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 /**
  * *_strcpy - check the description
@@ -12,10 +13,9 @@
 
 char *_strcpy(char *dest, char *src)
 {
-	char *p = dest;
-	int a = strlen(src);
+	char *p = src;
 
-	dest = malloc(a + 1);
+	dest = malloc(strlen(src + 1));
 	strcpy(dest, src);
-	return (p);
+	return (dest);
 }

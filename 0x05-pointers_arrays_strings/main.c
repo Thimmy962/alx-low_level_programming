@@ -6,9 +6,8 @@
 int main(void)
 {
 	char *b = get_string("x: ");
-	char *c;
+	char c;
 	*_strcpy(c, b);
-	printf("%s\n", c);
-	free(c);
+	printf("%s", *c);
 	return (0);
 }
