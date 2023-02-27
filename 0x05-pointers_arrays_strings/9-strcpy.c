@@ -12,9 +12,9 @@
 
 char *_strcpy(char *dest, char *src)
 {
-	int a = strlen(src);
+	int a = strlen(src), *p = &dest;
 
 	dest = malloc(a + 2);
 	strcpy(dest, src);
-	return dest;
+	return p;
 }
