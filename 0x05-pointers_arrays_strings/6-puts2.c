@@ -10,9 +10,9 @@
 
 void puts2(char *s)
 {
-	int i;
+	int i, b = strlen(s);
 
-	for (i = 0; i < strlen(s); i++)
+	for (i = 0; i < b; i++)
 	{
 		if ((i % 2) == 0)
 		{
