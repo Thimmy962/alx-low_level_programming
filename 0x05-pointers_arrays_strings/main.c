@@ -1,10 +1,14 @@
 #include <stdio.h>
 #include "main.h"
 #include <cs50.h>
+#include <stdlib.h>
 
 int main(void)
 {
-	string b = get_string("x: ");
-	puts_half(b);
+	char *b = get_string("x: ");
+	char *c;
+	*_strcpy(c, b);
+	printf("%s\n", c);
+	free(c);
 	return (0);
 }
