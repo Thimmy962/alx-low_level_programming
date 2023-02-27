@@ -10,11 +10,5 @@
 
 void rev_string(char *s)
 {
-	int a = strlen(s), b = a - 1;
-
-	for (; b >= 0; b--)
-	{
-		_putchar(s[b]);
-	}
-	_putchar('\n');
+	strrev(s);
 }
