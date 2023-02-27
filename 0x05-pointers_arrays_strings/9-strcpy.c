@@ -13,7 +13,11 @@
 
 char *_strcpy(char *dest, char *src)
 {
-	dest[strlen(src) + 1];
-	strcpy(dest, src);
+	int i = 0, a = strlen(src) + 1;
+
+	dest = malloc(a);
+	for (; i <= a; i++)
+		dest[i] = src[i];
 	return (dest);
 }
+
