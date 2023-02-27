@@ -13,7 +13,7 @@
 
 char *_strcpy(char *dest, char *src)
 {
-	dest = malloc(strlen(src) + 1);
+	dest[strlen(src) + 1];
 	strcpy(dest, src);
 	return (dest);
 }
