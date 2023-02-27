@@ -26,6 +26,6 @@ int _atoi(char *s)
 				total = total * 10 + s[i] - '0';
 			}
 		}
-	return total;
+	return (total);
 }
 
