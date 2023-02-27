@@ -4,9 +4,9 @@
 
 int main(void)
 {
-	int n = 45;
-	printf("n = %i\n", n);
-	reset_to_98(&n);
-	printf("n = %i\n", n);
+	int n = 45, b = 50;
+	printf("n = %i an b = %i\n", n, b);
+	swap_int(&n, &b);
+	printf("n = %i and b = %i\n", n, b);
 	return (0);
 }
