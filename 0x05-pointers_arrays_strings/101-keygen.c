@@ -19,18 +19,9 @@ int main(void)
 	 * length of uppercase
 	 * length os special characters
 	 */
-	int length, digitsLength, upperCaseLength, lowerCaseLength, symbolsLength, i, char_type;
+	int length = 8, digitsLength, upperCaseLength, lowerCaseLength, symbolsLength, i, char_type;
 
 	char *password, *digits, *lowerCase, *upperCase, *symbols;
-
-	printf("Password length: ");
-	scanf("%d", &length);
-
-	if (length <= 5)
-	{
-		printf("Password length must be greater than 5\n");
-		return (1);
-	}
 
 	password = malloc(length + 1);
 
