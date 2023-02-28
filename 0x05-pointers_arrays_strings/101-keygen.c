@@ -1,76 +1,35 @@
-#include <stdlib.h>
 #include <stdio.h>
-#include <string.h>
+#include <stdlib.h>
 #include <time.h>
-#include <unistd.h>
 
 /**
- * main - check the description
- * description: the programme with a valid password for a crack me code all the time
- * Return string
-*/
-
+ * main - program that generates random valid
+ * passwords for the program 101-crackme
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-	/**
-	 * password length
-	 * length of digits
-	 * length of lowerCase
-	 * length of uppercase
-	 * length os special characters
-	 */
-	int length = 8, digitsLength, upperCaseLength, lowerCaseLength, symbolsLength, i, char_type;
+	int pass[100];
+	int i, sum, n;
 
-	char *password, *digits, *lowerCase, *upperCase, *symbols;
+	sum = 0;	
 
-	password = malloc(length + 1);
+	srand(time(NULL));
 
-	digits = "0123456789";
-	digitsLength = strlen(digits);
-
-	lowerCase = "abcdefghijklmnopqrstuvwxyz";
-	lowerCaseLength = strlen(lowerCase);
-
-	upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	upperCaseLength = strlen(upperCase);
-
-	symbols = "!@#$%^&*><(),_.";
-	symbolsLength = strlen(symbols);
-
-	srand(time(NULL) * getpid());
-
-	for (i = 0; i < length; i++)
+	for (i = 0; i < 100; i++)
 	{
-		/**
-		 *  char_type. get the char type by large random number % 4 since the total char type is 4. 
-		* The modulus will be between 0 - 4
-		*/
-		char_type = rand() % 4;
-
-		switch(char_type)
+		pass[i] = rand() % 78;
+		sum += (pass[i] + '0');
+		putchar(pass[i] + '0');
+		if ((2772 - sum) - '0' < 78)
 		{
-			/*if char_type is 0, then the password at position i should be a random digit*/
-			case 0:
-				password[i] = digits[rand() % digitsLength];
-				break;
-
-			case 1:
-				password[i] = upperCase[rand() % upperCaseLength];
-				break;
-
-			case 2:
-				password[i] = lowerCase[rand() % lowerCaseLength];
-				break;
-
-			case 3:
-				password[i] = symbols[rand() % symbolsLength];
-				break;
+			n = 2772 - sum - '0';
+			sum += n;
+			putchar(n + '0');
+			break;
 		}
 	}
-	password[length] = '\0';
-	printf("Password: %s\n", password);
-
-	free(password);
 
 	return (0);
 }
