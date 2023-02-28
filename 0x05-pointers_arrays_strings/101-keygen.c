@@ -20,7 +20,7 @@ int main(void)
 	{
 		a[i] = rand() % 78;
 		b += (a[i] + '0');
-		putchar(s[i] + '0');
+		putchar(b[i] + '0');
 		if ((2772 - b) - '0' < 78)
 		{
 			n = 2772 - b - '0';
