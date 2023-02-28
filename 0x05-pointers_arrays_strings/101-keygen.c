@@ -10,22 +10,21 @@
  */
 int main(void)
 {
-	int pass[100];
-	int i, sum, n;
+	int a[100], i, b, n;
 
-	sum = 0;	
+	b = 0;	
 
 	srand(time(NULL));
 
 	for (i = 0; i < 100; i++)
 	{
-		pass[i] = rand() % 78;
-		sum += (pass[i] + '0');
-		putchar(pass[i] + '0');
-		if ((2772 - sum) - '0' < 78)
+		a[i] = rand() % 78;
+		b += (a[i] + '0');
+		putchar(s[i] + '0');
+		if ((2772 - b) - '0' < 78)
 		{
-			n = 2772 - sum - '0';
-			sum += n;
+			n = 2772 - b - '0';
+			b += n;
 			putchar(n + '0');
 			break;
 		}
