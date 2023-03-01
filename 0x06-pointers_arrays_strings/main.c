@@ -10,5 +10,6 @@
 int main(void)
 {
     string b = get_string("Sentence: ");
-	printf("%s\n", cap_string(b));
+	cap_string(b);
+	printf("%s\n", b);
 }
