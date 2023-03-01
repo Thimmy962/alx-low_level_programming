@@ -10,3 +10,4 @@ char *rot13(char *str);
 void _putchar(int c);
 void print_number(int n);
 char *cap_string(char *s);
+void rev_string(char *n);
