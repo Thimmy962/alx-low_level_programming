@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <cs50.h>
 
 /**
  * main - check the code for
@@ -8,5 +9,6 @@
  */
 int main(void)
 {
-    print_number(-900);
+    string b = get_string("Sentence: ");
+	printf("%s\n", cap_string(b));
 }
