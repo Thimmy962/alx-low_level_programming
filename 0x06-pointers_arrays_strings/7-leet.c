@@ -21,7 +21,7 @@ char *leet(char *str)
 		{
 			if (str[i] == alpha[j])
 			{
-				str[i] =symbol[j];
+				str[i] = symbol[j];
 			}
 		}
 	}
