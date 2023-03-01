@@ -1,15 +1,18 @@
 #include "main.h"
 #include <stdio.h>
 
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
 int main(void)
 {
-	int scores[] = {23, 26, 76, 98, 32};
-	reverse_array(scores, 5);
-int i = 0;
+    char str[] = "Look up!\n";
+    char *ptr;
 
-while (i < 5)
-{
-	printf("%i\n", scores[i]);
-	i++;
-}
+    ptr = string_toupper(str);
+    printf("%s", ptr);
+    printf("%s", str);
+    return (0);
 }
