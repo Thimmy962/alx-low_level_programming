@@ -35,4 +35,5 @@ char *leet(char *str)
 			str[i] = 1;
 		}
 	}
+	return (str);
 }
