@@ -5,11 +5,11 @@
 /**
  * rot13 - check the description
  * @str: takes a string as input
- * description: rotakes the by 133
+ * description: rotates the by 13
  * Return: Achar
 */
 
-char *rot13(char *s)
+char *rot13(char *str)
 {
 	int i, j;
 
@@ -20,13 +20,13 @@ char *rot13(char *s)
 	{
 		for (j = 0; a[j] != '\0'; j++)
 		{
-			if (s[i] == a[j])
+			if (str[i] == a[j])
 			{
-				s[i] = b[j];
+				str[i] = b[j];
 				break;
 			}
 		}
 	}
 
-	return (s);
+	return (str);
 }
