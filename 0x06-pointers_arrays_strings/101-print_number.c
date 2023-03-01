@@ -10,6 +10,7 @@
 void print_number(int n)
 {
 	unsigned int para;
+
 	if (n < 0)
 	{
 		para = -n;
