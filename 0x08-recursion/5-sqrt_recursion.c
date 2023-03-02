@@ -1,5 +1,4 @@
 #include "main.h"
-#include <math.h>
 
 /**
  * _sqrt_recursion- find the natural square root of a number
@@ -9,10 +8,18 @@
 
 int _sqrt_recursion(int n)
 {
-	int st;
-	st = sqrt(n);
+	float sqrt, temp; int number = n;
 
-	if ((int)st - st != 0)
+	sqrt = number / 2;
+	temp = 0;
+
+	while(sqrt != temp)
+	{
+		temp = sqrt;
+		sqrt = (number / temp + temp) / 2;
+	}
+	if ((int) sqrt - sqrt != 0)
 		return (-1);
-	return (st);
+	else if((int) sqrt -sqrt == 0)
+		return (sqrt);
 }
