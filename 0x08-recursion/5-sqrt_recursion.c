@@ -9,7 +9,7 @@ int checker(int num, int var);
  */
 
 int checker(int num, int var)
-{	
+{
 	if (var * var == num)
 		return (var);
 
