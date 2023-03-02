@@ -11,9 +11,11 @@ int prime(int n, int div)
 {
 	if (div == n)
 		return (1);
-	else if (n % div == 0)
+
+	if (n % div == 0)
 		return (0);
-	prime(n, div + 1);
+
+	return (prime(n, div + 1));
 }
 
 /**
@@ -26,6 +28,7 @@ int is_prime_number(int num)
 {
 	if (num < 2)
 		return (0);
+
 	return (prime(num, 2));
 }
 

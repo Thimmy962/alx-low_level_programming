@@ -4,5 +4,6 @@
 
 int main(void)
 {
-	printf("%f\n",sqrt(49));
+	printf("%d\n",is_prime_number(10));
+	return (0);
 }
