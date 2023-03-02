@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * strspn - check the description
+ * _strspn - check the description
  * @s: takes input s
  * @accept: takes a string accept as input
  * description: gets the length of a prefix substring

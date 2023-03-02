@@ -2,9 +2,9 @@
 #include <string.h>
 
 /**
- * strchr - check the description
+ * _strchr - check the description
  * @s: takes input s
- * @c: takes input c 
+ * @c: takes input c
  * description: looks for c as a substring of s
  * Return: returns a pointer
 */
