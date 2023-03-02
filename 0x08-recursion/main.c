@@ -1,9 +1,10 @@
 #include <stdio.h>
-#include <math.h>
+#include <cs50.h>
 #include "main.h"
 
 int main(void)
 {
-	printf("%d\n",is_prime_number(10));
+	int n = get_int("What is n? ");
+	printf("%d\n",_sqrt_recursion(n));
 	return (0);
 }

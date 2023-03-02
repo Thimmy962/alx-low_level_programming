@@ -1,5 +1,23 @@
 #include "main.h"
 
+int checker(int num, int var);
+/**
+ * checker - find the natural square root of a number
+ * @num: takes an input n
+ * @var: another int input
+ * Return: int
+ */
+
+int checker(int num, int var)
+{	
+	if (var * var == num)
+		return (var);
+
+	if (var * var > num)
+		return (-1);
+	return (checker(num, var + 1));
+}
+
 /**
  * _sqrt_recursion- find the natural square root of a number
  * @n: takes an input n
@@ -8,18 +26,8 @@
 
 int _sqrt_recursion(int n)
 {
-	float sqrt, temp; int number = n;
-
-	sqrt = number / 2;
-	temp = 0;
-
-	while(sqrt != temp)
-	{
-		temp = sqrt;
-		sqrt = (number / temp + temp) / 2;
-	}
-	if ((int) sqrt - sqrt != 0)
+	if (n < 1)
 		return (-1);
-	if((int) sqrt - sqrt == 0)
-		return (sqrt);
+
+	return (checker(n, 1));
 }
