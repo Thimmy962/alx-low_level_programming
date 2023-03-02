@@ -20,6 +20,6 @@ int _sqrt_recursion(int n)
 	}
 	if ((int) sqrt - sqrt != 0)
 		return (-1);
-	else if((int) sqrt -sqrt == 0)
+	if((int) sqrt - sqrt == 0)
 		return (sqrt);
 }
