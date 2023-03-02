@@ -4,7 +4,10 @@
 
 int main(void)
 {
-	int n = get_int("What is n? ");
-	printf("%d\n",_sqrt_recursion(n));
+	string a = get_string("s1: ");
+	string b = get_string("s1: ");
+	int j = wildcmp(a, b);
+	printf("%i\n", j);
+
 	return (0);
 }
