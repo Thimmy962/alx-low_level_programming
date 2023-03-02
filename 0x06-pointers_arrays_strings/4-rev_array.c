@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * reverse_array - check the description
  * @a: an array of integer
@@ -10,17 +11,19 @@
 
 void reverse_array(int *a, int n)
 {
-	int tmp[n], i = n - 1, b = 0;
+	int *tmp, i, b = 0;
+	tmp = malloc((4 * n));
 
-	for (; i >= 0; i--)
+	for (i = n - 1; i >= 0; i--)
 	{
 		tmp[b] = a[i];
 		b++;
 	}
-	while (tmp[i] != '\0')
+
+	/*after the first loop i will now be zero*/
+	while(i < n)
 	{
 		a[i] = tmp[i];
 		i++;
 	}
 }
-
