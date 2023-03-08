@@ -4,7 +4,7 @@
 /*
  * _strlen_recursion - check the description
  * @s: takes a string
- * description: returns the length of the string
+ * description: calculates length of a string
  * Return: int
  */
 
