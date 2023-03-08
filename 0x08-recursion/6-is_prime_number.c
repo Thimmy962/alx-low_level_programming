@@ -7,27 +7,26 @@
  * Return: int
  */
 
-int prime(int n. int div)
+int prime(int n, int div)
 {
 	if (div == n)
 		return (1);
 	else if (n % div == 0)
 		return (0);
-	else
-		prime(n, div + 1);
+	prime(n, div + 1);
 }
 
 /**
  * is_prime_number - chrcks if a number is prime number
- * @num: takes an input nun
- * return: ibt
+ * @num: takes an input
+ * Return: int
  */
 
-int is_prime_number(int n)
+int is_prime_number(int num)
 {
-	if (n < 2)
+	if (num < 2)
 		return (0);
 	else
-		return (prime(n, 2));
+		return (prime(num, 2));
 }
 
