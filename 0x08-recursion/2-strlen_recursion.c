@@ -2,7 +2,7 @@
 #include <string.h>
 
 /*
- *_strlen_recursion - check the description
+ * _strlen_recursion - check the description
  * @s: takes a string
  * description: returns the length of the string
  * Return: int
