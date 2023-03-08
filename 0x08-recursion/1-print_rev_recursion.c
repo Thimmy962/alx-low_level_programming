@@ -3,9 +3,9 @@
 
 /*
  * _print_rev_recursion - check description
- * @s: takes a sting input
- * description: a the reverse version of a string
- * Return: Mothing
+ * Description: prints the reverse of a string
+ * @s: takes a string s as input
+ * Return: Void
  */
 
 void _print_rev_recursion(char *s)
