@@ -53,18 +53,17 @@ int main(int argc, char *argv[])
 int ctoi(char c)
 {	int j;
 
-	switch(c)
-	{	
+	switch (c)
+	{
 		case '0':
 			j = 0;
 			break;
 		case '1':
 			j = 1;
 			break;
-			
 		case '2':
 			j = 2;
-			break;	
+			break;
 		case '3':
 			j = 3;
 			break;
