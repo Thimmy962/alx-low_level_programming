@@ -10,7 +10,7 @@
 int main(int argc, char *argv[])
 {
 	
-	int coins, cents, quaters, dimes, nickels, pennies;
+	int braces, coins, cents, quaters, dimes, nickels, pennies;
 	if (argc != 2)
 	{
 		printf("Error\n");
@@ -22,6 +22,7 @@ int main(int argc, char *argv[])
 	dimes = 0;
 	nickels= 0;
 	pennies = 0;
+	braces = 0;
 
 	while (cents >= 25)
 	{
@@ -41,13 +42,19 @@ int main(int argc, char *argv[])
 		nickels++;
 	}
 
+	while (cents >= 2)
+	{ 
+		cents -= 2;
+		braces++;
+	}
+
 	while (cents >= 1)
 	{
 		cents = cents - 1;
 		pennies++;
 	}
 
-	coins = quaters + dimes + nickels + pennies;
+	coins = quaters + dimes + braces + nickels + pennies;
 	printf("%i\n", coins);
 	return (0);
 }
