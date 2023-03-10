@@ -34,5 +34,6 @@ int checker(char *s, int x, int y)
 
 	if (s[x] == s[y])
 		return (checker(s, x + 1, y - 1));
+	return (1);
 }
 
