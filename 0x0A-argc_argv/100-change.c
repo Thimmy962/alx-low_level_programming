@@ -9,9 +9,10 @@
  */
 int main(int argc, char *argv[])
 {
-	
+
 	int braces = 0, cents, quaters = 0, dimes = 0,
 	    nickels = 0, pennies = 0;
+
 	if (argc != 2)
 	{
 		printf("Error\n");
@@ -35,7 +36,7 @@ int main(int argc, char *argv[])
 		nickels++;
 	}
 	while (cents >= 2)
-	{ 
+	{
 		cents -= 2;
 		braces++;
 	}
