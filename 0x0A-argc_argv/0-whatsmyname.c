@@ -2,14 +2,15 @@
 
 /**
  * main - prints its name
- * @arvg: command line argument
- * @arcv: command line argument
+ * @argc: command line argument
+ * @argv: command line argument
  * Return: int
  */
 
 int main(int argc, char *argv[])
 {
-	int i = 0; char *s = argv[0];
+	int i = 0;
+	char *s = argv[0];
 
 	while (s[i] != '\0')
 	{
@@ -17,5 +18,6 @@ int main(int argc, char *argv[])
 		i++;
 	}
 	_putchar('\n');
+	return (0);
 }
 
