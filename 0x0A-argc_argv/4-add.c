@@ -28,16 +28,14 @@ int main(int argc, char *argv[])
 
 		for (i = 0; s[i] != '\0'; i++)
 		{
-			if (isdigit(s[i]) && ctoi(s[i]) > 0)
-			{
-				sum = sum + atoi(s);
-			}
-			else if (!isdigit(s[i]))
+
+			if (!isdigit(s[i]))
 			{
 				printf("Error\n");
 				return (1);
 			}
 		}
+		sum = sum + atoi(s);
 	}
 	printf("%d\n", sum);
 
