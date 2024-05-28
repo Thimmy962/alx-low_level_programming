@@ -4,12 +4,12 @@
 
 
 /**
- * binary_to_unit - convert base 2 to 10
+ * binary_to_uint - convert base 2 to 10
  * @b: a string of digits to convert to base 10
  * Return: unsigned int
 */
 
-unsigned int binary_to_unit(const char *b)
+unsigned int binary_to_uint(const char *b)
 {
 	unsigned int number = 0;
 	int len, i;
